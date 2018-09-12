@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v4.content.ContextCompat
 import android.support.v7.app.AppCompatActivity
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -85,7 +86,7 @@ class DetailMovieFragment : Fragment() {
                     favMovieModel.addFavMovie(realm, favMovie)
                 } else {
                     val v = favMovieModel.getLastStudent(realm)
-                    val newStudent = v.copy(v._ID + 1)
+                    val newStudent = v.copy(v._ID + 1, favMovie.json)
                     favMovieModel.addFavMovie(realm, newStudent)
                 }
                 iv_fav_btn.setBackgroundResource(R.drawable.ic_favorite_pink_24dp)

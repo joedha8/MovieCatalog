@@ -45,6 +45,7 @@ class SearchFragment : Fragment(), SearchContract.View, ListMovie.OnItemClickLis
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         (activity as AppCompatActivity).supportActionBar!!.show()
+        (activity as AppCompatActivity).supportActionBar!!.title = "Search Movie"
         presenter.attach(this)
         presenter.subscribe()
         progress_bar_search.visibility = View.GONE
