@@ -1,7 +1,7 @@
 package id.rackspira.moviecatalog.ui.fragment.search
 
 import id.rackspira.moviecatalog.model.Result
-import id.rackspira.moviecatalog.ui.base.BaseContract
+import id.rackspira.moviecatalog.base.BaseContract
 
 class SearchContract {
     interface View: BaseContract.View{

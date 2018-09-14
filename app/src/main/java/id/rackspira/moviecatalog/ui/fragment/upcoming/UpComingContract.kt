@@ -1,7 +1,7 @@
 package id.rackspira.moviecatalog.ui.fragment.upcoming
 
 import id.rackspira.moviecatalog.model.Result
-import id.rackspira.moviecatalog.ui.base.BaseContract
+import id.rackspira.moviecatalog.base.BaseContract
 
 class UpComingContract {
     interface View: BaseContract.View{

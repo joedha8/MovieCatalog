@@ -1,4 +1,4 @@
-package id.rackspira.moviecatalog.ui.base
+package id.rackspira.moviecatalog.base
 
 class BaseContract {
 
